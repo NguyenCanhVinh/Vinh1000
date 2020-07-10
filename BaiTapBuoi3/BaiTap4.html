@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyễn Cảnh Vinh</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			font-family: tahoma;
+			font-size: 16px;
+		}
+		#Menu{
+			width: 650px;
+			height: 40px;
+			background-color: #6d136a;
+			margin: 0 auto;
+			margin-top: 50px;
+			border: solid 2px #000000;
+
+		}
+		ul.root > li{
+			list-style: none;
+			float: left;
+		}
+		ul.root > li > a{
+			text-decoration: none;
+			color: white;
+			padding: 0px 15px 0px 15px;
+			line-height: 40px;
+			display: block;
+
+		}
+		ul.root > li > a:hover{
+			background-color: green;
+		}
+		ul .subMenu{
+			width: 250px;
+			background: #6d136a;
+			min-height: 150px;
+			display: none;
+			position: absolute;
+		}
+		ul .subMenu li{
+			list-style: none;
+		}
+		ul .subMenu li a{
+			color: white;
+			text-decoration: none;
+			display: block;
+			border-top: solid 1px #ccc;
+			line-height: 40px;
+			text-indent: 1px;
+		}
+		ul .subMenu li a:hover{
+			background:green;
+		}
+		ul.root > li:hover  ul.subMenu{
+            display: block;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="Menu">
+		<ul class="root">
+			<li><a href="./">TRANG CHỦ</a></li>
+			<li><a href="./">QUẦN ÁO NAM</a>
+				<ul class="subMenu">
+					<li><a href="./">Áo Phồng</a></li>
+					<li><a href="./">Quần Jean</a></li>
+					<li><a href="./">Đai Thắt</a></li>
+					<li><a href="./">Đồn Hồ</a></li>
+				</ul>
+			</li>
+			<li><a href="./">QUẦN ÁO NỮ</a>
+			<ul class="subMenu">
+					<li><a href="./">Váy Áo</a></li>
+					<li><a href="./">Quần Jean</a></li>
+					<li><a href="./">Túi Sách</a></li>
+					<li><a href="./">Mỹ Phẩm</a></li>
+				</ul></li>
+			<li><a href="./">QUẦN ÁO TRẺ EM</a>
+			<ul class="subMenu">
+					<li><a href="./">Đồ trẻ Sơ Sinh</a></li>
+					<li><a href="./">Đồ Trẻ 3-5 Tuổi</a></li>
+					<li><a href="./">Đồ trẻ 6-10tuổi </a></li>
+					<li><a href="./">Đồ CHơi</a></li>
+				</ul></li>
+			<li><a href="./">ĐẶT HÀNG</a>
+			<ul class="subMenu">
+					<li><a href="./">Tư Vấn</a></li>
+					<li><a href="./">Hàng Mới</a></li>
+					<li><a href="./">Liên hệ</a></li>
+					<li><a href="./">Thanh Toán</a></li>
+				</ul></li>
+			
+		</ul>
+	</div>
+
+</body>
+</html>
