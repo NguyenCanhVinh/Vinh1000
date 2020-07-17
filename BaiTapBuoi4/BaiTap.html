@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nguyen Canh Vinh</title>
+	<style type="text/css">
+		/*Phan menu*/
+		body{ font-family: 'Fira Sans Extra Condensed', sans-serif; font-size: 14px; width:100%;margin: 0px auto;}
+		#menu_top{ background: #194d58;height: 50px; color: #FFF;}
+		#menu_top ul{margin-left: 270px;}
+		#menu_top ul li{list-style: none;float: left; }
+        #menu_top ul li a{text-decoration: none;display:block;height: 50px; line-height: 50px;color: #FFF;padding: 0px 50px 0px 50px;border: solid 1px #ccc; }
+        #menu_top ul li a.active{background-color: #1949b5;}
+        #banner{height:auto;width:1920px;}
+        #banner img{width:1920px;height: 500px;}
+
+        /*Phan left*/
+            /*Phan Giua tren*/
+            #main{width: 1200px;margin: 0px auto;}
+            #main #left{width: 900px;float: left;min-height: 500px;}
+            #main #right{width: 280px;min-height: 500px;margin-left: 20px;float: left;}
+            h1,h3,h4{font-family:'Fira Sans Extra Condensed', sans-serif; font-weight: 500;line-height: 1.1;color:inherit;text-decoration: none; }
+            .Anh_ngang{height:300px;margin-top:10px;display: flex;}
+            .Anh_ngang img {width:256px ;height:180px;margin-right:20px;}
+            .Anh1 {height: 300px;}
+            .Anh1 a:hover{border-bottom:solid 1px #006699;}
+            /*Phan Giua duoi*/
+            #main #left_duoi ul{margin: 0px;padding: 0px;}
+            #main #left_duoi ul li{list-style: none;clear: left;border-bottom: 2px solid #ccc;float: left; margin-bottom:20px;}
+            #main #left_duoi ul li img{	float: left;margin-right:10px;margin-bottom: 20px;width: 256px; height: 150px;}
+            #main #left_duoi ul li h2{font-size: 14px;margin-top: 0px;font-size: 20px; color: #286090; text-decoration: none;}
+            #main{margin-top: 10px;}
+
+        /*Phàn right*/
+        #main #right .menu_right ul{margin: 0px;padding: 0px;border: 2px solid #ccc;}
+        #main #right .menu_right ul li{list-style: none;}
+        #main #right .menu_right ul li a{display: block;text-decoration: none;line-height: 32px;border-bottom: 2px solid #ccc;}
+        #main #right .menu_right h3{background:#194d58 ;height: 40px;margin-top: 0px;text-align: center;font-size: 14px;line-height: 40px;color: #FFF;}
+
+        .menu_right1{height:610px; margin-top:20px;}
+        .menu_right1 h4{width:270px;height:40px;background-color: #194d58;line-height: 40px;padding-left:10px;color: white}
+        .DoanVan{height:110px;}
+        .DoanVan img{width:100px; height:100px;margin-top:10px;float:left;border-radius: 20px;}
+        .DoanVan a{padding-top:10px; padding-left: 120px;display: block;color:black;text-decoration: none;}
+        .DoanVan a:hover{text-decoration: underline;}
+        .DoanVan p{padding-top:5px;padding-left: 120px;font-size: 13px;color: #888;}
+
+        .menu_right2{height:720px;margin-top:100px;}
+        .menu_right2 h4{width:258px;height:40px;background-color:#194d58;line-height: 40px;padding-left:10px;color: white;}
+        .sub{height:80px;	}
+        .sub p{width:40px ;height:40px ;background-color:#194d58;text-align: center;margin-top:20px;line-height: 40px;border-radius: 20px;float:left;color: white;}
+        .sub a{padding-left:50px;padding-top:20px;display: block;text-decoration: none;color:black;}
+        .sub a:hover, .vetoi a:hover{text-decoration: underline;}
+
+        .menu_right3{height:500px;margin-top: 100px;}
+        .menu_right3 h4, .menu_right4 h4, .menu_right5 h4{width:280px;height:40px;background-color: #194d58;line-height: 40px;text-align: center;color: white;}
+        .menu_right3 img{width:280px ;height:400px;}
+
+        .menu_right4{height:200px;}
+        .menu_right4 a{text-decoration: none;display: block;color:black;padding-left:10px;margin-top:10px;}
+
+        .menu_right5{height:220px;}
+        .menu_right5 img{width:280px ;height:180px}
+
+        /*Phần footer */
+        #footer {clear: both;background-color: #194d58;color: #fff;line-height: 1.4; }
+        #footer a {color: #fff;text-decoration: none;}
+        #footer .inner {  margin: 0 auto;padding: 40px 0;width: 1040px;}
+        #footer .inner > div { float: left;margin-right: 50px;width: 340px;}
+        #footer .inner > div:last-child { margin-right: 0; width: 260px;}
+        #footer .inner h3 {font-size: 18px;margin-bottom: 30px;}
+        #footer .inner .info-link ul { padding-left: 58px; }
+        #footer .inner .info-link li { position: relative;}
+        #footer .inner .info-link li:after {content: "●"; display: block; font-size: 16px; position: absolute; left: -17px; top: 0;}
+        #footer .inner .info-link li a:hover {text-decoration: underline; }
+        #footer .inner .follow-us ul { text-align: none;}
+        #footer .inner .follow-us li {display: block;  }
+        #footer .copyright { border-top: 1px solid #4b707c; font-size: 15px; padding: 38px 0 35px; text-align: center;}
+        #footer .inner .follow-us li a:hover {background-color: #fff;color: #666; }
+        .clearfix:after {clear: both;content: ".";display: block;height: 0;line-height: 0;visibility: hidden;}
+	</style>
+</head>
+<body>
+	<div class="TongThe">
+		<div class="menu">
+			<div id="menu_top"> 
+                <ul>
+         	            <li><a href="#" title="TRANG CHỦ" class="active">TRANG CHỦ</a></li>
+         	            <li><a href="#" title="GIỚI THIỆU">GIỚI THIỆU</a></li>
+         	            <li><a href="#" title="HỌC HTML">HỌC HTML</a></li>
+         	            <li><a href="#" title="HỌC CSS">HỌC CSS</a></li>
+         	            <li><a href="#" title="HỌC JQUERY">HỌC JQUERY</a></li>
+         	            <li><a href="#" title="HỌC WORDPESS">HỌC WORDPESS</a></li>
+         	            <li><a href="#" title="LIÊN HỆ">LIÊN HỆ</a></li>
+                </ul>
+	        </div>
+	        <div id="banner"> 
+		        <img src="http://openmagazine.net/wp-content/uploads/2019/11/8-ngon-ngu-lap-trinh-phan-mem.png">
+	        </div>
+		</div>
+		<div id="main">
+			<div id="left">
+				<div id="left_tren">
+					<h1>BÀI VIẾT NỔI BẬT</h1>
+					<img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/java-va-csharp---ngon-ngu-lap-trinh-nao-tot-hon-trong-thoi-dai-so-63720750657.1156.jpg" style="width: 880px;height: 400px;">
+					<h3 style="font-size: 22px">Hưỡng dẫn chuyển html sang wordpress khởi tạo dự án</h3>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019 &nbsp; Lượt xem: 2344 lượt</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum libero unde. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum libero unde laudantium sapiente atque odio at facere nemo aperiam.</p1>
+					<div class="Anh_ngang">
+						<div class="Anh1">
+							<img  src="https://lh3.googleusercontent.com/proxy/-iH5ASP-aPdprcBBgu1i0I1gVCMlds43CcP3SfgWpLnkXI_X4gFiZvdwukNPE38ZETOxG3SBG7sTQZjUjcvwGs4qnU-MwVlmJ24ba2tv4dziU6BDGxF6yK61BosS3qeVr03xRHN6_j02itfPq77rC_sPtQTEaw" >
+							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+						</div>
+						<div class="Anh1">
+							<img  src="https://cdn-images-1.medium.com/max/800/1*HqJzc1ZlB4pBPQgBfXPYWg.png" >
+							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<p style="font-size: 13px; color: #888;">Ngày đăng: 30-09-2019</p>
+						</div>
+						<div class="Anh1">
+							<img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSz-yGL8kKU7jmIkTxoV9DKUS7fPemFHtRFQ&usqp=CAU" >
+							<a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
+							<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+						</div>
+					</div>
+				</div>
+				<div id="left_duoi">
+					<h1>BÀI VIẾT MỚI NHẤT</h1>
+					<ul>
+				<li>
+					<img src="https://vtc.edu.vn/wp-content/uploads/2018/09/14287acc-b5cb-46db-b8b4-e3ffe652fc0d.png">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+
+				</li>
+				<li>
+					<img src="https://congdansoblog.files.wordpress.com/2017/09/hoc-lap-trinh-java.jpg">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://www.topitworks.com/blogs/wp-content/uploads/2017/11/maxresdefault-2-e1511091900360.jpg">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS8CeQPcq9-PgH7GFXIGyfispzQ6WIKAxxIdw&usqp=CAU">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+
+				</li>
+				<li>
+					<img src="https://codelearnstorage.s3.amazonaws.com/Upload/Blog/hoc-csharp-winform-voi-tool-63724976140.5669.jpg">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://steamacademy.edu.vn/wp-content/uploads/2019/12/steam-c.png">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://4.bp.blogspot.com/-Pl6YTgRSbco/W5uC3pA0iNI/AAAAAAAAP_w/9B-H33iit0UmhMZHB1ePuvolh5tJVvemQCLcBGAs/s640/quenn01.png">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://wiki.matbao.net/wp-content/uploads/2019/09/css3-la-gi-1-1200x900.png">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRNcp9e8rRrdlf0yQ4JbfWn5aDSZeqCbi8-zA&usqp=CAU">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+				<li>
+					<img src="https://techtalk.vn/wp-content/uploads/2017/09/kotlin-1-696x348.jpg">
+					<h2 style="font-size: 20px; color: #286090; text-decoration: none;">Bài viết mới nhất của chủ đề hưỡng dẫn wordpress</h2>
+					<p style="font-size: 13px;color: #888;">Ngày đăng: 30-09-2019</p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, sapiente mollitia, dolore minus et eligendi quod perspiciatis placeat iure deleniti obcaecati blanditiis eius sit! Consectetur ullam praesentium deserunt ratione hic.
+				</li>
+			</ul>
+				</div>
+			</div>
+			<div id="right">
+				<div class="menu_right">
+			        <h3>CHUYÊN MỤC</h3>
+			        <ul>
+			  	        <li><a href="#"> &#62;Hoc wordpress(152)</a></li>
+			  	        <li><a href="#"> &#62;Học HTML(52)</a></li>
+			  	        <li><a href="#"> &#62;Học CSS(15)</a></li>
+			  	        <li><a href="#"> &#62;Học jquery(7)</a></li>
+			  	        <li><a href="#"> &#62;Học React Native(8)</a></li>
+			  	        <li><a href="#"> &#62;Chủ đề khác(10)</a></li>
+			        </ul>
+			    </div>
+			    <div class="menu_right1">
+					<h4>BÀI VIẾT MỚI </h4>
+					<div class="DoanVan">
+						<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQWoNO0Se_OZKjdVz6If5BkS3aTwmuxL10Lrw&usqp=CAU">
+						<a href="#">7 kênh youtube học lập trình web tốt nhất thế giới giúp bạn nâng cao kỹ năng</a>
+						<p>Ngày đăng: 18-07-2020</p>
+					</div>
+					<hr>
+					<div class="DoanVan">
+						<img src="https://image.shutterstock.com/image-vector/coding-web-technology-shields-html5-260nw-1233420808.jpg">
+						<a href="#">Học HTML & CSS, học front end thông qua dự án thực tế</a>
+						<p>Ngày đăng: 18-07-2020</p>
+					</div>
+					<hr>
+					<div class="DoanVan">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png">
+						<a href="#">5 frameworks frontend miễn phí tốt nhất cho dự án web của bạn</a>
+						<p>Ngày đăng: 18-07-2020</p>
+					</div>
+					<hr>
+					<div class="DoanVan">
+						<img src="https://techtalk.vn/techtalk_blog/public/picture/img/phutranphong/1511426547mceclip0.png">
+						<a href="#">Những đoạn code hay dùng trong lập trình theme woocommecre wordpressg</a>
+						<p>Ngày đăng: 18-07-2020</p>
+					</div>
+					<hr>
+					<div class="DoanVan">
+						<img src="https://i7.pngflow.com/pngimage/988/411/png-website-development-jquery%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E7%AF%84%E4%BE%8B%E6%95%99%E5%AD%B8-javascript-logo-html-logo-web-design-label-logo-css-clipart.png">
+						<a href="#">Share plugin get bài viết từ 10 trang báo nổi tiếng của Việt Nam.</a>
+						<p>Ngày đăng: 18-07-2020</p>
+					</div>
+					<hr>
+				</div>
+				<div class="menu_right2">
+					<h4>BÀI VIẾT XEM NHIỀU </h4>
+					<div class="sub">
+						<p>1</p>
+						<a href="#">Download file psd background chương trình, hội nghị.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>2</p>
+						<a href="#">Download miễn phí phần mềm Adobe indesign CS4 & CS5.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>3</p>
+						<a href="#">Du lịch Hà Nội – Làng cổ Đường Lâm – Tam Đảo, Vĩnh Phúc.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>4</p>
+						<a href="#">Du lịch Nghệ An – Hoàng Trù Kim Liên</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>5</p>
+						<a href="#">Share full code website tin tức sử dụng wordpress.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>6</p>
+						<a href="#">Share full code web shop, web bán hàng sử dụng wordpress.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>7</p>
+						<a href="#">Những câu hỏi thường gặp khi đi phỏng vấn lập trình php.</a>
+					</div>
+					<hr>
+					<div class="sub">
+						<p>8</p>
+						<a href="#">10 đoạn code đếm ngược sử dụng script cực đẹp, miễn phí.</a>
+					</div>
+					<hr>
+				</div>
+				<div class="menu_right3">
+					<h4>QUẢNG CÁO</h4>
+					<img src="https://lh3.googleusercontent.com/proxy/uiPFs23rIZRm0lbL6ZdV2Ff-Ho33Bw7zWpwwzhOhzDDgbuDJq2DoWuvy8PKvX4ZItLIaR0hxJw9q9iwkKxXl25CiDsXG1Q" alt="anh">;
+				</div>
+				<div class="menu_right4">
+					<h4>BẠN BÈ </h4>
+					<a href="#"> &#62; Hello </a>
+					<a href="#"> &#62; Nguyen Canh Vinh</a>
+				</div>
+				<div class="menu_right5">
+					<h4>FACEBOOK </h4>
+					<img src="https://ithomnay.com/uploads/images/image_750x_5c2dbd2d1a429.jpg" />
+				</div>
+			</div>
+		</div>
+		</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="inner clearfix">
+      <div class="about-us">
+        <h3>About us</h3>
+        <p>Tôi là sinh viên năm 2, khoa công nghệ thông tin - Đại học điện lực,  tôi  thích lập trình và thiết kê web, vì vậy tôi tạo ra trang web này để trao đổi kiến thức về lập trình và thiết kế web </p>
+      </div>
+
+      <div class="info-link">
+        <h3>Quick Links</h3>
+        <nav>
+          <ul>
+            <li><a href="./">Lập trình</a></li>
+            <li><a href="./">Thiêt kế web</a></li>
+            <li><a href="./">Học html/css</a></li>
+            <li><a href="./">Video hưỡng dẫn</a></li>
+            <li><a href="./">Kiến thức khác</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="follow-us">
+        <h3>Follow Us</h3>
+       <ul>
+       	<li>Địa chỉ:Phượng Hoàng Trung Đô - Tp.Vinh - Nghệ An</li>
+       	<li>Điện Thoại:0372651619</li>
+       	<li>Email:NguyenCanhVinh2000@gmail.com</li>
+       	<li>Trường Đại Học Điện Lực Hà Nội</li>
+       </ul>
+      </div>
+    </div>
+
+    <p class="copyright">Bản quyền thuộc về Nguyễn Cảnh Vinh</p>
+		</div>
+
+	</div>
+
+</body>
+</html>
