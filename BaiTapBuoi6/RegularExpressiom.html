@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Biểu thức chính quy</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var Password=  window.prompt("Mời bạn nhập mật khẩu:  ");
+	// Mật khẩu có ít nhất 6 ký tự:            /^.{6,}$/
+    // Mật khẩu có ít nhất 1 ký tự là số:      /^(?=.*[0-9])$/;
+	// Mật khẩu bắt đầu bằng chữ cái viết hoa: /^([A-Z])$/
+
+
+	var isStrongPassword = /^([A-Z])(?=.*[0-9])(.{6,})$/;
+	if(isStrongPassword.test(Password)){
+			document.write("Đăng nhập thành công")
+    }else{
+			document.write("Đăng nhập thất bại, mời bạn nhập lại!!!");
+	}
+</script>
+</html>

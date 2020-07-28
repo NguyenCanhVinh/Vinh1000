@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai4</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//Cho phép người dùng nhập số bất kỳ gọi là n, xáo phần tử thứ n trong mảng sau rồi in lại mảng ra man hình
+	var n=  window.prompt("array= [3,29,23,24,9,63,88,2,4]; ---Nhập phần tử n cần xóa:  ");
+    var array= [3,29,23,24,9,63,88,2,4];
+		for(var i=0;i<array.length-1;i++){
+		    if(array[i]==n){
+			    array.splice(i,1);
+			    document.write(array);
+		    }else{
+	            document.write("Phần tử không tồn tại");
+         }	
+    }
+
+</script>
+</html>

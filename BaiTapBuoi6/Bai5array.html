@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai5</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	//Cho mảng 2 chiều , tìm phần tử lớn nhất và nhỏ nhất in ra man hình
+	var array=[];
+	array[0] = [35, 78, 33, 1];
+    array[1] = [9, 104, 22, 74];
+    array[2] = [155, 75, 23, 44];
+    array[3] = [42, 44, 8, 100];
+	var max = array[0][0];
+	for(var i = 0; i<array.length; i++){
+        for(var j =0; j<array.length; j++){
+            if(max<array[i][j]){
+                max = array[i][j];               
+            }
+        }
+    }
+	
+	document.write("Phan tu lon nhat trong mang la: "+max+ "</br>");
+
+	 document.write("============================================= </br>");
+
+	var min = array[0][0];
+	for(var i = 0; i<array.length; i++){
+        for(var j =0; j<array.length; j++){
+            if(min>array[i][j]){
+                min = array[i][j];               
+            }
+        }
+    }
+	
+	document.write("Phan tu nho nhat trong mang la: "+min);
+
+
+	
+</script>
+</html>
