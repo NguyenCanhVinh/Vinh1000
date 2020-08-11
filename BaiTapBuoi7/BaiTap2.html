@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DaoChuoi</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	/*function DaoChuoi(){
+		var NhapChuoi=window.prompt("Nhap chuoi can dao: ");
+		var ChuoiDao=" ";
+		for(var i=NhapChuoi.length-1;i>=0;i--){
+			ChuoiDao +=NhapChuoi[i];
+		}
+		document.write("Hien thi chuoi sau khi dao: ",ChuoiDao);
+	}
+	DaoChuoi();*/
+
+	//--------------------------------------------------------
+	function DaoChuoi(){
+		var NhapChuoi=window.prompt("Nhap chuoi can dao: ");
+		var i=NhapChuoi.length;
+		var ChuoiDao=" ";
+		while (i>0){
+			ChuoiDao += NhapChuoi.substring(i-1,i);
+			i--;
+		}
+		document.write("Hien thi chuoi sau khi dao: ",ChuoiDao);
+	}
+	DaoChuoi();
+</script>
+</html>

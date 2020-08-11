@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form dang nhap</title>
+</head>
+<body>
+	<form>
+		<h1>Dang nhap tai khoan</h1>
+		<div class="register">
+			<input type="text" id="name" placeholder="username"> 
+            
+		</div>
+		<div class="register">
+			<input type="password" id="pass" placeholder="password">
+            
+		</div>
+		<div class="button">
+			<button type="button" onclick="checklogin()">LOGIN</button>
+		</div>
+		<div class="bottom">
+			<p>Not registred? <a href="#">Create an accont</a></p>
+		</div>
+	</form>
+
+</body>
+<script type="text/javascript">
+	function checklogin(){
+		var name= document.getElementById("name").Value;
+	    var pass= document.getElementById("pass").Value;
+	    if(name=="CanhVinh" && pass=="12345"){
+	    	document.write("Xin chao, ban dang nhap thanh cong"+name);
+	    }
+	    else{
+	    	alert("Sai mat khau hoac ten dang nhap");
+	    }
+	    return false;
+	    
+
+	}
+</script>
+</html>

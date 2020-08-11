@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GioHang</title>
+</head>
+<body>
+	<P>------------------------------------------------------</P>
+	<h2>SAN PHAM:</h2>
+	<table border="1" id="listsp">
+
+		<tr>
+			<td>IP10</td>
+			<td>27000</td>
+			<td><button onclick="Them(this)">Them</button></td>
+		</tr>
+		<tr>
+			<td>SAMSUNG A71</td>
+			<td>10000 </td>
+			<td><button onclick="Them(this)">Them</button></td>
+		</tr>
+		<tr>
+			<td>LapTop DELL In33</td>
+			<td>10007</td>
+			<td><button onclick="Them(this)">Them</button></td>
+		</tr>
+		<tr>
+			<td>TIVI SONY M45</td>
+			<td>37</td>
+			<td><button onclick="Them(this)">Them</button></td>
+		</tr>
+		<tr>
+			<td>MAY HUT BUI TANASONIC</td>
+			<td>499</td>
+			<td><button onclick="Them(this)">Them</button></td>
+		</tr>
+	</table>
+	<P>------------------------------------------------------</P>
+	<h2>GIO HANG:</h2>
+	<table border="1" id="GioHang"></table>
+	<h3>THANH TIEN:<label id="tong"></label>VND</h3>
+
+</body>
+<script type="text/javascript">
+			function Them(btn){
+				var  row=btn.parentElement.parentElement.cloneNode(true);
+				var btnXoa= row.getElementsByTagName('button')[0];
+				btnXoa.innerText="Xoa";
+				btnXoa.setAttribute('onclick','Xoa(this)');
+				document.getElementById('GioHang').appendChild(row);
+				 TinhTien()
+			}
+			function Xoa(btn1){
+				var row=btn1.parentElement.parentElement;
+				document.getElementById('GioHang').removeChild(row);
+				 TinhTien()
+			}
+			function TinhTien(){
+				var tongtien=0;
+				var cart=document.getElementById("GioHang");
+				var rows=cart.getElementsByTagName("tr");//lay so dong
+				for(var i=0;i<rows.length;i++){
+					var cells=rows[i].getElementsByTagName('td');
+					var price=cells[1].innerText;
+					tongtien=tongtien+1*Number(price);
+				}
+				document.getElementById('tong').innerText=tongtien;
+			}
+		</script>
+</html>
