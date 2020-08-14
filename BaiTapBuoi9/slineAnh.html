@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<style>
+	.slider{
+		margin: 0px auto;
+		width: 1200px;
+		height: 600px;
+		border: 1px solid grey;
+		position: relative;
+	}
+	.slide{
+		width: 1200px;
+		height: 600px;
+	}
+	span{
+		color: white;
+		font-size: 60px;
+		opacity: 0.5;
+	}
+	span#prev{
+		position: absolute;
+		top: 40%;
+		left: 1%;
+		z-index: 10;
+		cursor: pointer;
+	}
+	span#prev:hover{
+		color: white;
+		opacity: 1;
+	}
+	span#next{
+		position: absolute;
+		top: 40%;
+		right: 1%;
+		z-index: 10;
+		cursor: pointer;
+	}
+	span#next:hover{
+		color: white;
+		opacity: 1;
+	}
+	ul{
+		position: absolute;
+		z-index: 10;
+		width: 100px;
+		bottom: 2%;
+		left: 47%;
+		margin-left: -50px;
+		display: flex;
+		justify-content: space-between;
+	}
+	ul li{
+		width: 20px;
+		height: 20px;
+		background: white;
+		opacity: 0.5;
+		border-radius: 50%;
+		cursor: pointer;
+		list-style: none;
+		transition: 0.6s;
+	}
+	ul li:hover{
+		color: white;
+		opacity: 1;
+	}	
+</style>
+<body>
+	<div class="slider">
+		<img class="slide" src="https://znews-photo.zadn.vn/w660/Uploaded/qhj_yvobvhfwbv/2018_07_18/Nguyen_Huy_Binh1.jpg" stt = "0" >
+		<img class="slide" src="https://genk.mediacdn.vn/thumb_w/640/2019/11/30/1-15751247013311481884219-crop-15751262363731475316635.jpg" stt = "2" style="display: none">
+		<img class="slide" src="https://vcdn-ngoisao.vnecdn.net/2019/11/07/LA-0362-3735-1573098162.jpg" stt = "2" style="display: none">
+		<span id="prev"><i class="fas fa-chevron-left"></i></span>
+		<span id="next"><i class="fas fa-chevron-right"></i></span>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>	
+</body>
+<script>
+	$(document).ready(function() {
+		var stt = 0;
+		startImg = $("img.slide:first").attr("stt");
+		endImg = $("img.slide:last").attr("stt");
+		//duyệt các ảnh có trên slide
+		$("img.slide").each(function(){
+			if ($(this).is(':visible')) 
+			stt = $(this).attr("stt");
+		});
+
+		$("#next").click(function(){
+			if (stt == endImg) {
+				stt = -1;
+			}
+			//tăng stt của ảnh
+			next = ++stt;
+			//ẩn ảnh hiện tại
+			$("img.slide").hide();
+			//show ảnh tiếp theo
+			$("img.slide").eq(next).show();
+		});
+
+		$("#prev").click(function(){
+			if (stt == 0) {
+				stt = endImg;
+				prev = stt++;
+			}
+			//giảm stt của ảnh
+			prev = --stt;
+			$("img.slide").hide();
+			$("img.slide").eq(prev).show();
+		});
+
+		setInterval(function(){
+			$("#next").click();
+		}, 5000);
+	});
+</script>
+</html

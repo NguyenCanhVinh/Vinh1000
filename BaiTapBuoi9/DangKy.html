@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+		
+	</script>
+<!-- Nhúng file CSS -->
+<style type="text/css">
+	body {
+font-family: Arial, sans-serif;
+background-color: #cecece;
+}
+a {
+color: #00bd00;
+}
+* {
+box-sizing: border-box;
+}
+.register {
+width: 500px;
+padding: 16px;
+margin: 0 auto;
+background-color: white;
+}
+input[type=text], input[type=password] {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+background-color: #ddd;
+outline: none;
+}
+hr {
+border: 1px solid #f1f1f1;
+margin-bottom: 25px;
+}
+.submit {
+background-color: #0900bd;
+color: white;
+padding: 15px 18px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+.submit:hover {
+opacity: 1;
+}
+.login {
+background-color: #ffffff;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<!-- Nhúng file JavaScript -->
+<script language="javascript" src="kiemtra.js"></script>
+<form action="" method="POST" onsubmit="return validate()">
+<div class="register">
+<h1>Đăng ký</h1>
+<p>Vui lòng điền thông tin để đăng ký</p>
+<hr>
+<label for="username"><b>Tên đăng nhập</b></label>
+<input type="text" placeholder="Họ và tên" name="username" id="username">
+<label for="password"><b>Mật khẩu</b></label>
+<input type="password" placeholder="******" name="password" id="password">
+<label for="password-repeat"><b>Nhập lại mật khẩu</b></label>
+<input type="password" placeholder="******" name="password-repeat" id="password-repeat">
+<label for="phone"><b>Số điện thoại</b></label>
+<input type="text" placeholder="số điện thoại" name="phone" id="phone">
+<label for="address"><b>Địa chỉ</b></label>
+<input type="text" placeholder="Dia chi" name="address" id="address">
+
+<hr>
+<p>Để tạo tài khoản vui lòng đồng ý với điều khoản của chúng tôi <a href="#">Terms &amp; Privacy</a>.</p>
+<button type="submit" class="submit">Đăng ký</button>
+</div>
+<div class="register login">
+<p>Bạn đã có tài khoản rồi? <a href="#">Đăng nhập</a>.</p>
+</div>
+</form>
+</body>
+<script type="text/javascript">
+	function validate() {
+var u = $("#username").val();
+var p1 = $("#password").val();
+var p2 = $("#password-repeat").val();
+var ph = $("#phone").val();
+var dc =$("#address").val();
+  
+if(u== "") {
+alert("Vui lòng nhập tên!");
+return false;
+}
+if(p1 == "") {
+alert("Vui lòng nhập mật khẩu!");
+return false;
+}
+if(p2 == "") {
+alert("Vui lòng xác minh mật khẩu!");
+return false;
+}if(ph==""){
+	alert("Vui lòng xác minh số điện thoại");
+
+}
+if(dc==""){
+	alert("Vui lòng xác minh địa chỉ");
+
+}
+  
+alert("Xin hãy điền đúng thông tin!")
+  
+return true;
+}
+</script>
+</html>
