@@ -13,7 +13,7 @@ public class Bai4SoNguyenTo {
         System.out.println("---Cac so nguyen to nho hon N="+N);
         for(i = 1; i < N; i++)
         {
-            if(SoNguyenTo(i)==true) {
+            if(SoNguyenTo(i)) {
             	System.out.println("  "+i);
             }
         }
