@@ -11,7 +11,7 @@ public class Bai4SoNguyenTo {
         	N=Integer.parseInt(sc.nextLine());
         }while(N<=0);
         System.out.println("---Cac so nguyen to nho hon N="+N);
-        for(i = 1; i <= N; i++)
+        for(i = 1; i < N; i++)
         {
             if(SoNguyenTo(i)==true) {
             	System.out.println("  "+i);
